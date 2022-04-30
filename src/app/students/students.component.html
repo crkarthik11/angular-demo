@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>
+        Student Management
+    </h1>
+    <button class="button">Add Student</button>
+    <table id="table">
+        <tr>
+          <th>Name</th>
+          <th>Gender</th>
+          <th>Age</th>
+          <th>Department</th>
+          <th>Username</th>
+        </tr>
+        <tr  *ngFor="let student of students">
+          <td>{{student.name}}</td>
+          <td>{{student.gender}}</td>
+          <td>{{student.age}}</td>
+          <td>{{student.department}}</td>
+          <td>{{student.username}}</td>
+         
+        </tr>
+        
+      </table>
+</div>
